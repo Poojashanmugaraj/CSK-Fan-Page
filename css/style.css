@@ -1,0 +1,519 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BODY */
+body {
+    background: #0a1a3f; /* dark blue */
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(90deg, #ffcc00, #0033a0);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 90vh;
+    background: url('../images/csk.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 50, 0.6);
+}
+
+.hero h1,
+.hero p,
+.hero button {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #ffcc00;
+}
+
+.hero p {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.hero button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    background: #ffcc00;
+    color: black;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #ffaa00;
+    transform: scale(1.1);
+}
+
+/* PLAYER SECTION */
+.players {
+    padding: 50px;
+    text-align: center;
+}
+
+.players h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #ffcc00;
+}
+
+.player-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.player-card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    width: 220px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.player-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.player-card h3 {
+    margin-top: 10px;
+}
+
+.player-card:hover {
+    transform: translateY(-10px);
+    background: #ffcc00;
+    color: black;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    margin-top: 50px;
+}
+/* HERO TEXT IMPROVEMENT */
+.tagline {
+    font-size: 30px;
+    color: #ffcc00;
+    margin-top: 10px;
+}
+
+.years {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* CHAMPIONS SECTION */
+.champions {
+    padding: 50px;
+    text-align: center;
+}
+
+.champions h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #ffcc00;
+}
+
+.champion-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.champion-card {
+    width: 220px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.champion-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.champion-card p {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.champion-card:hover {
+    transform: scale(1.05);
+    background: #ffcc00;
+    color: black;
+}
+/* WHISTLE SECTION */
+.whistle {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(45deg, #ffcc00, #0033a0);
+    color: black;
+}
+
+.whistle h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.whistle p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.whistle button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    background: black;
+    color: #ffcc00;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.whistle button:hover {
+    transform: scale(1.1);
+    background: #222;
+}
+/* SQUAD PAGE */
+.squad {
+    padding: 50px;
+    text-align: center;
+}
+
+.squad h1 {
+    font-size: 40px;
+    color: #ffcc00;
+    margin-bottom: 30px;
+}
+
+.category {
+    margin-bottom: 40px;
+}
+
+.category h2 {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+.category ul {
+    list-style: none;
+}
+
+.category li {
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px auto;
+    width: 250px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.category li:hover {
+    background: #ffcc00;
+    color: black;
+    transform: scale(1.05);
+}
+.player-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.player-card {
+    width: 180px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.player-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.player-card:hover {
+    transform: translateY(-10px);
+    background: #ffcc00;
+    color: black;
+}
+/* SCHEDULE PAGE */
+.schedule {
+    padding: 50px;
+    text-align: center;
+}
+
+.schedule h1 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ffcc00;
+}
+
+th {
+    background: #ffcc00;
+    color: black;
+}
+
+tr:hover {
+    background: rgba(255,255,255,0.1);
+}
+/* GALLERY */
+.gallery {
+    padding: 50px;
+    text-align: center;
+}
+
+.gallery h1 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.gallery h2 {
+    margin-top: 30px;
+    color: #ffcc00;
+}
+
+/* TIMELINE */
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.year-card {
+    width: 200px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.year-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.year-card h3 {
+    margin: 10px 0;
+}
+
+.year-card p {
+    margin-bottom: 10px;
+}
+
+.year-card:hover {
+    background: #ffcc00;
+    color: black;
+}
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.year-card {
+    width: 220px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.year-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.year-card:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+.achievements {
+    margin-top: 30px;
+    font-size: 18px;
+}
+/* FAN ZONE */
+.fanzone {
+    padding: 50px;
+    text-align: center;
+}
+
+.fanzone h1 {
+    color: #ffcc00;
+}
+
+.fanzone h2 {
+    margin-top: 30px;
+    color: #ffcc00;
+}
+
+/* FAN GRID */
+
+.fan-scroll {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* BIG IMAGE BOX */
+.fan-box {
+    width: 100%;
+}
+
+/* IMAGE FULL SIZE (NO CROP) */
+.fan-box img {
+    width: 100%;
+    height: auto;   /* VERY IMPORTANT */
+    display: block;
+    border-radius: 10px;
+}
+
+/* TEXT */
+.fan-box h2 {
+    margin-top: 10px;
+    color: #ffcc00;
+    text-align: center;
+}
+/* CONTACT PAGE */
+.contact {
+    padding: 50px;
+    text-align: center;
+}
+
+.contact h1 {
+    color: #ffcc00;
+    font-size: 40px;
+}
+
+.contact h2 {
+    color: #ffcc00;
+    margin-top: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+/* FORM */
+.contact form {
+    margin-top: 20px;
+}
+
+/* INPUTS */
+.contact input,
+.contact textarea {
+    width: 320px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 10px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+/* BUTTON */
+.contact button {
+    padding: 12px 25px;
+    background: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact button:hover {
+    background: #e6b800;
+}
